@@ -16,7 +16,7 @@ fieldset, form, label {/*reset alternativo*/
 *{/*config padrão*/
 	/*border: solid 1px #000;*/
 	font-family: 62.5%;
-	font-family: Century Gothic, sans-serif;
+	font-family: 'Century Gothic', sans-serif;
 }
 img, div, embed, video{
 	max-width: 100%;
@@ -25,6 +25,9 @@ h1{
 	font-size: 1em;
 	display: inline;
 	margin-left: 12px;
+}
+h2{
+
 }
 /* lists */
 .l1, .l1 li, .l2, .l2 li {
@@ -48,7 +51,7 @@ h1{
 body {
   color: #000;
   outline: none;
-  font-family: Century Gothic, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 
 }
 img, picture, video, embed, figure,{
@@ -70,14 +73,10 @@ section{
 	height:  auto;
 	padding: 30px 20px 30px 20px;
 	margin-top: -10px;
-	}
-#ref_quemsomos{ /*titulos de referência para a transição, encontra-se no inicio de cada section no lado superior esquerdo*/
-	margin-top: 80px;
-	
 }
 #definicao{
 	margin: 0 auto;
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	color: #fff;
 	text-align: justify;
 	z-index: 99999;
@@ -96,12 +95,12 @@ ul{
 }
 ul li{
 	display: inline;
-	font-family: Century Gothic;	
+	font-family: 'Century Gothic';	
 }					
 
 #missao,#visao,#valores{
 	font-size: 1.7em;
-	font-family: Berlin Sans FB;
+	font-family: 'Berlin Sans FB';
 	color: #fff;
 }
 
