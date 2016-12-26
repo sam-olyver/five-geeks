@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Desenvolvido pelos alunos da Etec de Poá, site complementar para o projeto de conclusão de curso, empresa ficticia!-->
+<html lang="pt-br">
+  <head>
+	<title>Five Geeks Design</title>
+	
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="title" content="Five Geeks Design, empresa atuante na area de desenvolvimento de sites e sistemas para internet, atualização e manutenção em web sites responsivos e dinâmicos são seus principais serviços" />   
+    <meta name="description" content=" Five Geeks Design, empresa atuante na area de desenvolvimento de sites e sistemas para internet, atualização e manutenção em web sites responsivos e dinâmicos são seus principais serviços" />
+    <meta name="keywords" content=" Five Geeks Design, Geeks, Design, criação de site, responsivo,  5GD, Web design, responsivo, crossbrowser, sistemas para internet, empresa de soluções web, Agência Web, Empresa de desenvolvimento web "  />
+	<meta name="robots" content="index,follow" />
+	
+	<!-- folhas de estilo externas !-->
+	<link rel="shortcut icon" href="img/icone.png" > 
+    <link rel="stylesheet"  href="css/style.css" />
+    <link rel="stylesheet"  href="css/efeitos.css" />
+    <link rel="stylesheet"  href="css/portfolio.css" />
+	
+	<!-- javascript's externos !-->
+	<script src="js/modernizr.custom.js"></script><!-- biblioteca moderniz, para os computadores da Etec que possuem navegadores desatualizados !-->
+    <script src="js/jquery.min.js"></script><!-- biblioteca necessária para a transição do site !-->
+    <!--script banner-->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/script-banner.js"></script>	
+	<!-- Script Slider !-->
+	<script src="js/jquery.cbpFWSlider.min.js"></script>
+	<script>
+		$( function() {					
+			$( '#cbp-fwslider' ).cbpFWSlider();	
+		} );
+	</script>
+    <!--Script para a transição do Scroll funcionar (requer a biblioteca jquery.min.js) -->
+	<script>
+		jQuery(document).ready(function($) 
+		{ 
+			$(".scroll").click(function(event)
+			{        
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+			});
+		});
+	</script><!-- script encontra-se isolado do link da biblioteca por motivos de conflito !-->                 
+  </head>
+  <body>
+
+   <header> <!-- estrutura geral do menu-topo !-->
+      <input type="checkbox" id="control-nav" />
+      <label for="control-nav" class="control-nav"></label>
+      <label for="control-nav" class="control-nav-close"></label>
+
+      <nav class="cl-effect-1">
+        <ul class="l2">
+          <li>
+            <a href="#banner" title="Início" class="scroll">Home</a>
+          </li>
+          <li>
+            <a href="#quemsomos" title="Definição da Empresa" class="scroll">Quem Somos</a>
+          </li>
+          <li>
+            <a href="#port" title="Nosso Portfólio" class="scroll">Portfólio</a>
+          </li>
+          <li>
+            <a href="#serv" title="Como Trabalhamos" class="scroll">Serviços</a>
+          </li>
+		  <li>
+            <a href="#contato" title="Fale Conosco" class="scroll">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    			
+  </body>
+</html>
