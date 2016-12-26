@@ -12,7 +12,9 @@ fieldset, form, label {/*reset alternativo*/
   background:transparent;
   vertical-align: baseline;
 }
-
+html, body{
+	/*overflow-x: hidden;*/
+}
 *{/*config padrão*/
 	/*border: solid 1px #000;*/
 	font-family: 62.5%;
@@ -59,7 +61,7 @@ img, picture, video, embed, figure,{
 }
 
 section{
-	width: auto;
+	max-width: 100%;
 	height: auto;
 	display: inline-block;
 }
@@ -111,9 +113,12 @@ ul li{
 /*section portfólio, estrutura basica, demais configurações encontra-se no arquivo 'portfolio.css'*/
 
 #port{
-	width: 100%;
+	
+	min-width: 100%;
 	height: 700px;
-	background-image: url(../img/imagensgeeks3.png);
+	background-image: url('../img/imagensgeeks3.png');
+	background-repeat: repeat;
+
 }
 @media screen and (min-width: 1920px){
 	#port{
