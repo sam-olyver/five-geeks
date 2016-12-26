@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "menu.css";
+@import "banner.css";
 
 html, body, div, span,iframe,
 h1, h2, h3, h4, h5, h6, hr, p, pre,
@@ -54,12 +55,13 @@ img, picture, video, embed, figure,{
 	max-width: 100%;
 }
 
-
-#banner{ /* ID da sessão do banner */
+section{
 	width: auto;
 	height: auto;
 	display: inline-block;
 }
+
+
 /*section quem somos*/
 #quemsomos{
 	background: #2980b9;
