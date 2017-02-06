@@ -217,8 +217,11 @@
     </section>
 	
 	<section>
-		<h2 style='display: none;'>Mais serviços</h2>
+	
 		<div id="geek"><!-- div +serviços, estrutura e modais !-->
+		<div>
+			<h2 style='display: inline-block; margin-top: 80px; margin-bottom: 10px; margin-left: 20px; font-size: 34px; color: #fff;'>+Serviços</h2>
+		</div>	
 				<div class="md-modal md-effect-16" id="modal-1">
 					<div class="md-content">
 						<h3>Mobile</h3>
@@ -292,18 +295,28 @@
 				</div>
 			</div>
 			
-			<div class="container"> <!-- conjunto de icones das modais !-->
-				<div class="group-button-1">	
-					<div class="md-trigger"  id ="mobile" data-modal="modal-1"><img src="img/Mobile.png" alt='Mobile' title='Mobile'/></div>		
-					<div class="md-trigger"  id="logo" data-modal="modal-2"><img src="img/logomarcas.png" alt='Logomarcas' title='Logomarcas' /></div>
-					<div class="md-trigger"  id ="cross" data-modal="modal-3"><img src="img/crossbrowser.png" alt='Crossbrowser' title='Crossbrowser' /></div>
-				</div>
-				<div class="group-button-2">
-					<div class="md-trigger"  id="hospedagem" data-modal="modal-4"><img src="img/hospedagem.png" alt='Hospedagem' title='Hospedagem' /></div>
-					<div class="md-trigger"  id="marketing-digital" data-modal="modal-5"><img src="img/marketing-digital.png" alt='Marketing' title='Marketing Digital' /></div>
-					<div class="md-trigger"  id="responsive" data-modal="modal-6"><img src="img/responsive.png" alt='Design Responsivo' title='Design Responsivo' /></div>
-				
-				</div>		
+			<div class="group-button" style="text-align: center;"> <!-- conjunto de icones das modais !-->
+					<ul>	
+						<li class="md-trigger"  id ="mobile" data-modal="modal-1" >
+							<img src="img/Mobile.png" alt='Mobile' title='Mobile'/>
+						</li>		
+						<li class="md-trigger"  id="logo" data-modal="modal-2">		<img src="img/logomarcas.png" alt='Logomarcas' title='Logomarcas' />
+						</li>
+						<li class="md-trigger"  id ="cross" data-modal="modal-3">
+								<img src="img/crossbrowser.png" alt='Crossbrowser' title='Crossbrowser' />
+						</li>
+					</ul>
+					<ul>
+						<li class="md-trigger"  id="hospedagem" data-modal="modal-4">
+							<img src="img/hospedagem.png" alt='Hospedagem' title='Hospedagem' />
+						</li>
+						<li class="md-trigger"  id="marketing-digital" data-modal="modal-5">
+							<img src="img/marketing-digital.png" alt='Marketing' title='Marketing Digital' />
+						</li>
+						<li class="md-trigger"  id="responsive" data-modal="modal-6">
+							<img src="img/responsive.png" alt='Design Responsivo' title='Design Responsivo' />
+						</li>
+					</ul>	
 			</div>
 			
 			<div class="md-overlay"></div><!-- Layer !-->
@@ -314,7 +327,46 @@
 			<script> 
 				var polyfilter_scriptpath = '/js/';
 			</script>
-	    </div>
+	    </div><!-- div #GEEK !-->
+	</section>
+
+	<section><!-- section contato, estrutura e formulario !-->
+		<div id="contato">
+			<div>
+				<h2 id="ref_cont" style='display: inline-block; margin-top: 80px; margin-bottom: 10px; margin-left: 20px; font-size: 34px; color: #fff;' >Contato</h2>
+	        </div>
+
+			<div id="texto-contato" style='margin-bottom: 30px;'>
+				<div class="texto-centro">
+					<p>Ligue para <strong>(11) 5555-5556</strong> ou envie seu</p>
+					<p style='display: block;
+					margin-bottom: 30px;'>e-mail para <strong>Fivegeeksdesign@outlook.com</strong></p>
+					
+					<p>Se preferir preencha o formulário e entraremos em contato o mais breve possível</p>   
+				</div>
+			</div>
+
+			<div style='display: block; height: 480px;'>
+				<form style='display: block; margin: 0 auto;'  method="POST" action="php/contato.php"  >
+					
+					<div id="dados-contato">	
+						<span><img src="img/hello.png" alt='Hello,  preencha o formulário e entraremos em contato o mais breve possível.' /></span>
+						
+						<p style='margin-bottom: 20px;'><input type="text" name="nome" size="20" maxlength="50" placeholder="Seu nome" required /></p>
+									
+						<p style='margin-bottom: 20px;'><input type="text" name="email" size="20" maxlength="50" placeholder="E-mail" required /></p>
+						
+						<p style='margin-bottom: 20px;'><input type="text" name="tel" size="20" maxlength="13" placeholder="Telefone" required /></p>
+					</div>
+
+					<div id="mensagem-contato">	
+						<textarea style='margin-bottom: 5px; resize: none;' name="mensagem" rows="9" placeholder="Mensagem" required ></textarea>
+													
+						<input type="submit" value="Enviar" />
+					</div>					 
+				</form>	
+			</div>
+		</div>
 	</section>
 
   </body>
