@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import "menu.css";
-@import "banner.css";
 
 html, body, div, span,iframe,
 h1, h2, h3, h4, h5, h6, hr, p, pre,
@@ -17,7 +15,7 @@ html, body{
 }
 *{/*config padrão*/
 	/*border: solid 1px #000;*/
-	font-family: 62.5%;
+	/*font-size: 62.5%;*/
 	font-family: 'Century Gothic', sans-serif;
 }
 img, div, embed, video{
@@ -56,7 +54,7 @@ body {
   font-family: 'Century Gothic', sans-serif;
 
 }
-img, picture, video, embed, figure,{
+img, picture, video, embed, figure{
 	max-width: 100%;
 }
 
@@ -145,7 +143,7 @@ ul li{
 	padding: 15px 15px 15px 15px; 
 	display: inline-block;
 }
-#chat,#lampada,#orçamento{ /* ID das div centrais do conteúdo*/
+#chat, #lampada, #orcamento{ /* ID das div centrais do conteúdo*/
 	float: left;
 	width: 33.296875%; /* 0,29296875 + 4% adaptados	*/
 	height: auto;
@@ -159,15 +157,15 @@ ul li{
 
 	
 @media screen and (max-width: 950px){ 
-	#chat,#lampada,#orçamento{
+	#chat,#lampada,#orcamento{
 		width: 100%;
 		padding: 0;
 	}
-	#img_chat,#img_lampada,#img_orçamento{
+	#img_chat,#img_lampada,#img_orcamento{
 		background-position: center;
 	}
 }
-#img_chat,#img_lampada,#img_orçamento{
+#img_chat,#img_lampada,#img_orcamento{
 	width: 100%; /*300px*/
 	height: 260px;
 	background-repeat: no-repeat;
@@ -179,7 +177,7 @@ ul li{
 #img_lampada{
 	background-image: url(../img/Identidade-Visual.png);	
 }
-#img_orçamento{
+#img_orcamento{
 	background-image: url(../img/orçamento.png);
 }
 /*fim section serviços*/
@@ -203,7 +201,7 @@ button { /*tag dos icones modais*/
 	cursor: pointer;
 	border: none;
 	padding: 0.6em 1.2em;
-	background: rgba(192,192,192,0.8);
+	background-color: rgba(192,192,192, 0.8);
 	color: #fff;
 	font-family: 'Century Gothic';
 	font-size: 1em;
@@ -312,7 +310,7 @@ textarea{
 	outline: none;
 	margin-top: 120px;
 }
-@media screen (max-width: 870px) {
+@media screen and (max-width: 870px) {
 	
 	input[type="submit"]{
 		width: 100%;
