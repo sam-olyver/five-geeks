@@ -248,16 +248,7 @@ button:hover {
 	height: auto;
 	width: 100%;
 }
-.container-form{	
-	
-}
-#formulario{
-	/*margin: 0 auto;*/
-	width: 68.359375%; /*700px/		=0,68359375*/
-	/*display: inline-block;*/
-	
-}
- 
+
 #texto-contato{
 	color: #fff;
 	text-align: justify;
@@ -308,6 +299,10 @@ input[type="submit"]{
 	border: none;
 	outline: none;
 }
+input[type="submit"]:hover{
+	background-color: #fff;
+	color: #23ddb9;
+}
 textarea{
 	width: 85.71428571428571%; /*300px/		=0,8571428571428571*/
 	border-radius: 5px;
@@ -317,28 +312,27 @@ textarea{
 	outline: none;
 	margin-top: 120px;
 }
-@media screen and (max-width: 630px){
+@media screen (max-width: 870px) {
+	
+	input[type="submit"]{
+		width: 100%;
 
-input[type="submit"]{
-	width: 100%;
-}
-
-textarea{
-	width: 100%;
-	margin-top: 0;
-}
-input{
-	width: 100%;
-}
 	}
-@media screen and (max-width: 830px){
-#dados-contato, #mensagem-contato{
-	display: block;
-	width: 100%;
-	float: none;
-	margin: 0 auto;
+	textarea{
+		width: 100%;
+		margin-top: 0;
+	}
+	input{
+		width: 100%;
+	}
+	#dados-contato, #mensagem-contato, #contato{
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
 	}
 }
+
 /*fim do contato*/
 
 /*rodapé*/
@@ -349,7 +343,7 @@ footer{
 	background: #ececec;
 	height: auto;
 	padding: 20px 20px 20px 20px;
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	
 }
 #redes{ /*icones para redes sociais*/
@@ -373,13 +367,13 @@ footer{
 }
 
 iframe{ /* localização google maps*/
-	float:right;
+	float: right;
 	margin-top: -130px;
 	height: 200px; 
 	width: 29.296875%; /*300px/	0,29296875*/
 	
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 870px){
 iframe{
 	display: none;
 }
